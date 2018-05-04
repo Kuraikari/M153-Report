@@ -17,6 +17,7 @@ use services\QueryBuilder;
 <html>
 <head>
     <link href="../../css/base.css" type="text/css" rel="stylesheet">
+    <script src="../../js/customElements.js"></script>
 </head>
 <body>
     <div id="nav-main">
@@ -26,14 +27,14 @@ use services\QueryBuilder;
         <div class="left">
             <div>
                 <ul class="menu-main">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Report</a></li>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="about-us">About us</a></li>
                     <li>
                         <a href="">Manage</a>
                         <ul>
-                            <li><a href="">Users</a></li>
-                            <li><a href="">Customers</a></li>
-                            <li><a href="">Reports</a></li>
+                            <li><a href="users">Users</a></li>
+                            <li><a href="customers">Customers</a></li>
+                            <li><a href="reports">Reports</a></li>
                         </ul>
                     </li>
                 </ul>

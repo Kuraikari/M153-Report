@@ -8,3 +8,8 @@
             <source type="video/mp4" src="../../../assets/backgrounds/touhou-fox.m4v">
         </video>
     </div>
+    <div class="parallax">
+        <flag-icon class="flag-switzerland">
+
+        </flag-icon>
+    </div>

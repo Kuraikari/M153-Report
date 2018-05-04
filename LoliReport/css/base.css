@@ -50,12 +50,6 @@ body {
 
 .btn-language {
   padding-right: 24px; }
-  .btn-language::after {
-    position: relative;
-    content: ' ';
-    width: 24px;
-    height: 24px;
-    background-color: #131313; }
   .btn-language::before {
     position: absolute;
     width: 34px;
@@ -249,21 +243,35 @@ body {
       clear-after: left; }
     #login-popup form input[type=submit] {
       position: relative;
-      top: 35px; }
+      top: 35px;
+      border: 3px solid #4282ce;
+      background: none;
+      color: white;
+      border-radius: 3px; }
     #login-popup form #remember-me {
       display: none; }
       #login-popup form #remember-me ~ label {
         position: relative;
         padding: 8px;
-        border-color: #ef0020;
-        background: #ef0020;
+        background: none;
         color: white;
         left: 5px;
         top: 10px;
         user-select: none; }
+        #login-popup form #remember-me ~ label::before {
+          position: absolute;
+          padding: 2px;
+          content: ' ';
+          top: 3px;
+          left: -1px;
+          width: 115px;
+          height: 20px;
+          border: 3px solid #ef1535;
+          border-radius: 3px; }
       #login-popup form #remember-me:checked ~ label {
-        background: green;
-        border-color: green;
         color: white; }
+        #login-popup form #remember-me:checked ~ label::before {
+          content: ' ';
+          border: 3px solid green; }
 
 /*# sourceMappingURL=base.css.map */

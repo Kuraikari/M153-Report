@@ -86,13 +86,6 @@ body {
 .btn{
   &-language{
     padding-right: 24px;
-    &::after{
-      position: relative;
-      content: ' ';
-      width: 24px;
-      height: 24px;
-      background-color: #131313;
-    }
 
     &::before {
       position: absolute;
@@ -321,6 +314,10 @@ body {
     input[type=submit]{
       position: relative;
       top: 35px;
+      border: 3px solid #4282ce;
+      background: none;
+      color: white;
+      border-radius: 3px;
     }
 
     #remember-me{
@@ -329,18 +326,32 @@ body {
       & ~ label{
         position: relative;
         padding: 8px;
-        border-color: #ef0020;
-        background: #ef0020;
+        background: none;
         color: white;
         left: 5px;
         top: 10px;
         user-select: none;
+
+        &::before{
+          position: absolute;
+          padding: 2px;
+          content: ' ';
+          top: 3px;
+          left: -1px;
+          width: 115px;
+          height: 20px;
+          border: 3px solid #ef1535;
+          border-radius: 3px;
+        }
       }
 
       &:checked ~ label{
-        background: green;
-        border-color: green;
         color: white;
+
+        &::before{
+          content: ' ';
+          border: 3px solid green;
+        }
       }
     }
   }
